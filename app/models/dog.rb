@@ -3,6 +3,7 @@ class Dog
 
     @@all = []
 
+    #initializes class instance
   def initialize(name, breed, age)
     @name = name
     @breed = breed
@@ -10,6 +11,7 @@ class Dog
     @@all << self
   end
 
+  #class method to yield all instances
   def self.all
     @@all
   end
